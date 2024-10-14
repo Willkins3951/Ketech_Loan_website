@@ -1,0 +1,31 @@
+
+:root{
+    --color-primary:#6c63ff;
+    --color-success:#00bf8e;
+    --color-danger:#f75842;
+    --color-danger1:red;
+    --color-white:#fff;
+    --color-light:#ccc;
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-bg3 :#007bff;
+    --color-bg4:#0056b3;
+    --color-btn1:#007bff;
+    --color-btn2:#0056b3;
+   
+    --color-animation:cyan;
+
+    --container-width-lg:88%;
+    --container-width-md:90%;
+    --container-width-sm:92%;
+    --container-width-vsm:94%;
+
+    --transition: all 400ms ease;
+}
+
+.payment-container{
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+}

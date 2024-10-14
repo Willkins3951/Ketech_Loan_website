@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Member</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/add-member.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <i class="uil uil-dollar-alt"></i>
+        <a href="#">Ketech Investment.</a>    
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="signup-right">
+        <a href="/view-members.html">View Members</a>
+    </div>
+
+    <div class="signup-right">
+        <a href="/register.html">Register</a>
+    </div>
+</nav>
+
+    <div class="container add-member-ctr">
+        <h2>Add New Member</h2>
+        <form id="addMemberForm">
+            <input type="text" name="name" placeholder="Full Id Name" required>
+
+            <div class="sub-add-member">
+                <input type="text" name="national_number" placeholder="National ID" required>
+                <input type="text" name="phone_number" placeholder="Phone Number" required>
+            </div>
+
+            <div class="sub-add-member">
+                <input type="number" name="loan_amount" placeholder="Loan Amount" required>
+                <input type="text" name="loan_duration" placeholder="Loan duration" required>
+            </div>
+
+            <input type="text" name="guarantee_item" placeholder="Guarantee Item" required>
+
+            <div class="sub-add-member">
+                <input type="date" name="loan_issue_date" placeholder="Loan Issue Date" required>
+                <select name="paid_status" class="member_status" id="member-status">
+                    <option value="Not Paid" selected>Not Paid</option>
+                    <option value="Paid">Paid</option>
+                </select>
+            </div>
+
+            
+
+
+            
+
+
+            <button type="submit">Add Member</button>
+        </form>
+    </div>
+
+<script src="/js/add-member.js"></script>
+</body>
+</html>

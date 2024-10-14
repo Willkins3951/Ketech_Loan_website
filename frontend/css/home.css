@@ -1,0 +1,68 @@
+
+:root{
+    --color-primary:#6c63ff;
+    --color-success:#00bf8e;
+    --color-danger:#f75842;
+    --color-danger1:red;
+    --color-white:#fff;
+    --color-light:rgba(255, 255, 255, 0.7);
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-bg3 :#007bff;
+    --color-bg4:#0056b3;
+
+    
+    --color-animation:cyan;
+
+    --container-width-lg:88%;
+    --container-width-md:90%;
+    --container-width-sm:92%;
+    --container-width-vsm:94%;
+
+    --transition: all 400ms ease;
+}
+
+.uil{
+    color: var(--color-success);
+    font-size:x-large;
+
+}
+
+
+body{
+    background-image: url('../images/bac2.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-color: #f3f3f3; /* Fallback background color if image fails to load */
+
+}
+   
+
+.container_home{
+    height: 200px;
+    width:600px;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    box-shadow:inset 0px 0px 1px var(--color-white),
+                    0px 0px 3px var(--color-white), 
+                    0px 0px 5px var(--color-white);
+                    
+
+}
+
+/* Styling the divs holding the options */
+
+.div-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.option {
+    width: 300px;
+    margin-top: 1.2rem;
+}

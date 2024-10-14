@@ -1,0 +1,80 @@
+
+:root{
+    --color-primary:#6c63ff;
+    --color-success:#00bf8e;
+    --color-danger:#f75842;
+    --color-danger1:red;
+    --color-white:#fff;
+    --color-light:#ccc;
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-bg3 :#007bff;
+    --color-bg4:#0056b3;
+    --color-btn1:#007bff;
+    --color-btn2:#0056b3;
+   
+    
+    --color-animation:cyan;
+
+    --container-width-lg:88%;
+    --container-width-md:90%;
+    --container-width-sm:92%;
+    --container-width-vsm:94%;
+
+    --transition: all 400ms ease;
+}
+
+body{
+    background-image: url('../images/bac3.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-color: #f3f3f3; /* Fallback background color if image fails to load */
+
+}
+
+.add-member-ctr{
+    background-color: rgba(0.1, 0.1, 0, 0.4) ;
+    color: var(--color-white);
+    position: relative;
+    box-shadow: inset 0 0 1px var(--color-white),
+                    0 0 2px var(--color-white);
+    width:500px;
+
+}
+
+.sub-add-member{
+    width:100%;
+    display: flex;
+    gap: 10px;
+    
+}
+
+input[type="text"], input[type="password"],
+ input[type="number"], input[type="date"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    margin: 0 auto;
+    color:var(--color-bg3);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+
+
+#member-status{
+    width:100%;
+    border-radius: 5px;
+
+}
+
+
+.add-member-ctr h2{
+    color: var(--color-success);
+}

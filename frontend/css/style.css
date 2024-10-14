@@ -1,0 +1,313 @@
+
+
+/* ==== FONT AWESOME LINK */
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+body{  
+    font-optical-sizing: auto;
+    background-color:var(--color-bg);
+    line-height: 1.8rem;
+}
+
+*{
+    
+    text-decoration:none;
+    scroll-behavior:smooth;
+    font-family: "Kode Mono", monospace;
+
+}
+
+body {
+    font-family: "Kode Mono", monospace;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+:root{
+    --color-primary:#6c63ff;
+    --color-success:#00bf8e;
+    --color-danger:#f75842;
+    --color-danger1:red;
+    --color-white:#fff;
+    --color-light:#ccc;
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-bg3 :#007bff;
+    --color-bg4:#0056b3;
+    --color-btn1:#007bff;
+    --color-btn2:#0056b3;
+   
+    
+    --color-animation:cyan;
+
+    --container-width-lg:88%;
+    --container-width-md:90%;
+    --container-width-sm:92%;
+    --container-width-vsm:94%;
+
+    --transition: all 400ms ease;
+}
+
+::placeholder{
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"],
+ input[type="number"], input[type="date"],
+  input[type="email"] {
+    color:var(--color-bg3);
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+
+}
+
+
+body{
+    background-image: url('../images/bac1.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-color: var(--color-white); /* Fallback background color if image fails to load */
+
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color:var(--color-bg1);
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 30px;
+    color: var(--color-white);
+    letter-spacing: 1.5px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+}
+
+.logo i {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-success);
+    margin-right:2px;
+
+}
+
+.logo a {
+    color: white;
+    padding: 0;
+    margin-left:0;
+
+}
+
+
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 50px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.signup-right a {
+    color: var(--color-success);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.signup-right a:hover {
+    background-color: var(--color-success);
+    color: var(--color-white);
+}
+
+
+
+/* Login Container ,Sign Up Container Styling */
+
+.container {
+    background-color: var(--color-white);
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 60px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    margin: 0 auto;
+
+}
+
+.container input:focus {
+    outline: none;
+}
+
+
+
+button {
+    position: relative;
+    width: 90%;
+    padding: 10px;
+    background-color: var(--color-btn1);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem auto;
+}
+
+button:hover {
+    background-color: var(--color-btn2);
+
+}
+
+/* LOGIN AND REGISTER FORM SECTION */
+.login-section,
+.register-section {
+    width:100%;
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.88rem;
+}
+
+.login-section a,
+.register-section a{
+    color: var(--color-success);
+    text-decoration: none;
+    margin-left: 2rem;
+
+}
+
+
+.register-section a:hover,
+.login-section a:hover {
+    text-decoration: underline;
+    color:var(--color-white);
+}
+
+
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form input,
+.container form select {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container table, th, td {
+    border: 1px solid var(--color-black);
+    text-align: left;
+}
+
+.container th, td {
+    padding: 8px;
+}
+
+.container_home{
+    width:600px;
+ 
+}
+
+
+
+/* Styling the buttons (links) */
+.btn {
+    display: block;
+    padding: 1rem;
+    background-color: var(--color-btn1);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color:var(--color-btn2);
+
+}
+
+
+
+
+.payment-container{
+    width:65%;
+    font-size: 1.2rem;
+    margin:2rem auto;
+    font: 800;
+    color:var(--color-white);
+    background-color: grey;
+    padding: 0.5rem 2.5rem;
+}
+
+
+.payment-container input{
+    width:25%;
+    
+}
+
+
+.payment-container button{
+    width:70%;
+    
+}
+
+
+/* Responsive design for smaller screens */
+/* @media (max-width: 768px) {
+    .div-options {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .option {
+        width: 100%;
+    }
+} */

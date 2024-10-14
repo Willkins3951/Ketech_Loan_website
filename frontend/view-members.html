@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Members</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/view-members.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <i class="uil uil-dollar-alt"></i>
+        <a href="#">Ketech Investment.</a>    
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="signup-right">
+        <a href="/add-member.html">Add Member</a>
+    </div>
+
+    <div class="signup-right">
+        <a href="/register.html">Register</a>
+    </div>
+
+</nav>
+
+<!-- Search bar -->
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search by National Number..." onkeyup="filterTable()">
+</div>
+
+<!-- Members List Table -->
+<div class="list-container">
+    <h2>Members List</h2>
+    
+    <table id="membersTable">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>National Number</th>
+                <th>Phone Number</th>
+                <th>Loan Amount</th>
+                <th>Loan Duration</th>
+                <th>Guarantee Item</th>
+                <th>Loan Issue Date</th>
+                <th>Paid Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically populated here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Script to fetch and display members -->
+<script src="/js/view-members.js"></script>
+
+
+
+</body>
+</html>
