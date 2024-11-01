@@ -70,3 +70,20 @@ body{
     
     
 }
+
+
+footer{
+    background-color: var(--color-bg1);
+    position: absolute;
+    bottom:0;
+    left:0;
+    
+     
+}
+
+footer a i{
+    background-color: transparent;
+    padding: 0;
+    margin:0 3px;
+    
+}

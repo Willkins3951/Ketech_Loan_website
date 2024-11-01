@@ -43,6 +43,8 @@ body{
     width:70%;
     margin: 0.5rem auto;
     letter-spacing: 2px;
+    position: relative;
+    margin-top: 5rem;
 }
 
 
@@ -117,3 +119,4 @@ tr:nth-child(even) {
 .action-buttons a.view:hover {
     color: var(--color-white);
 }
+

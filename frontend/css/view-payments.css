@@ -42,9 +42,12 @@ a{
 /* SEARCH BUTTON  */
 
 .search-container{
+    position: relative;
+    top: 0;
     width:50%;
     margin: 0.5rem auto;
     letter-spacing: 2px;
+    margin-top: 5rem;
 }
 
 

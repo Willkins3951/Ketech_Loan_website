@@ -36,3 +36,192 @@ body{
     background-color: var(--color-white); /* Fallback background color if image fails to load */
 
 }
+
+
+/*  ===== CONTACT SECTION ==== */
+
+.contact-ctr{
+    height:max-content;
+    position: relative;
+    margin-top: 4rem;
+    
+}
+
+.contact {
+    padding:2rem 0 3rem 0;
+    
+}
+.contact h1{
+    text-decoration: center;
+    color:var(--color-white);
+    font-weight: 900;
+    font-size: 2.3rem;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+
+ .form-ctr{
+    height:max-content;
+    width:fit-content;
+    justify-content: center;
+    align-items: center;
+    padding:0.8rem 1.5rem ;
+    margin:.3rem auto;
+    background-color: var(--color-bg);
+    border-radius: 8px;
+}
+
+
+.form-ctr form{
+    height:max-content;
+    width:fit-content;
+    display:grid;  
+}
+
+.subfrm{
+    position:relative;   
+}
+
+.ctr{
+    position:relative; 
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1rem;
+
+    
+}
+
+.ctr input{
+    color:var(--color-text);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding:1rem 0.6rem;
+    border:1.5px solid transparent;
+    border-radius: 0.3rem;
+    margin:0.4rem 0;
+    width:95%;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    transition:0.3s ease;   
+    overflow: visible;
+
+}
+
+
+
+.ctr input:focus{
+    outline:none;
+    background-color: rgba(128, 128, 128, 0.76);
+    border:1.5px solid var(--color-text);
+}
+
+::placeholder{
+    color:var(--color-light);
+    text-transform: capitalize;
+    position:relative;
+}
+
+
+textarea{
+    background-color: rgba(0, 0, 0, 0.2);
+    color:var(--color-white);
+    font-size:1.0rem;
+    width:98%;
+    border-radius: 0.5rem;
+    outline: none;
+    margin: 0.4rem 0;
+    padding:0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+textarea::placeholder{
+    color:var(--color-white);
+    text-transform: capitalize;
+    font-size:1.0rem;
+    letter-spacing:0.1rem
+}
+
+.send{   
+    width:40%;
+    margin:1rem auto;
+    font-weight: 600;
+    color:var(--color-black);
+    padding:1.2rem 1.4rem;
+}
+
+/* ======= GET IN TOUCH STYLING ==== */
+
+.contact-details{
+    background-color: var(--color-bg) ;
+    padding:1.5rem;
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+  }
+
+
+
+
+
+.details-ctr{
+    width:80%;
+    margin:0 auto;
+
+}
+
+.details-ctr a{
+    
+    color:var(--color-white);
+
+}
+
+.details-ctr h2{
+    color:var(--color-white);
+    margin: 0.7rem 0;
+}
+
+.sub-details{
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);   
+    gap:2rem;
+}
+
+.tag{
+    margin-top: 0.8rem;
+}
+
+
+.sub-details div{
+    width:95%;
+    border-radius: 0.8rem;
+    padding:0.8rem 1rem;
+    margin:0.5rem 0;
+    box-shadow:inset 0 0 0 var(--color-white),
+                0 0 2px var(--color-white),
+                0 0 8px var(--color-white);
+    text-transform: capitalize;
+    transform: scale(0.97);
+    transition: all 0.8s ease-in-out;
+
+}
+
+.sub-details div:hover{
+    background-color: var(--color-bg1);
+    transform: scale(1.03);
+}
+
+
+.sub-details div h3{
+    color:var(--color-success);
+    padding:0.3rem 0;
+}
+
+.sub-details div p{
+    color:var(--color-white);
+    line-height: 1.8rem;
+}
+
+
+
+
+

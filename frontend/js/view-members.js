@@ -91,3 +91,34 @@ function filterTable() {
     }
 }
 
+//  SCROLL EFFECT ON NAVBAR 
+
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY; // Get scroll position
+    const threshold = 50; // Threshold for applying background color (adjust as needed)
+
+    if (scrollY >= threshold) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+  // Scroll up button functionality
+    
+  const scrollUpButton = document.getElementById('scroll-up');
+
+  window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+          scrollUpButton.style.display = 'block';
+      } else {
+          scrollUpButton.style.display = 'none';
+      }
+  });
+  
+  scrollUpButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
