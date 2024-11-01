@@ -25,8 +25,9 @@
 }
 
 .uil{
-    color: var(--color-success);
-    font-size:x-large;
+    color: var(--color-bg);
+    font-size:xx-large;
+    font-weight: 800;
 
 }
 
@@ -44,12 +45,13 @@ body{
 
 .container_home{
     height: 200px;
-    width:600px;
+    width:900px;
     background-color: var(--color-bg);
     color: var(--color-white);
     box-shadow:inset 0px 0px 1px var(--color-white),
                     0px 0px 3px var(--color-white), 
                     0px 0px 5px var(--color-white);
+    margin-top: 8rem;
                     
 
 }
@@ -63,6 +65,8 @@ body{
 }
 
 .option {
-    width: 300px;
+    width: fit-content;
     margin-top: 1.2rem;
+    
+    
 }

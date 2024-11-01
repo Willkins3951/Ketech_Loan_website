@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const membersTableBody = document.querySelector('#membersTable tbody');
 
@@ -9,23 +11,29 @@ document.addEventListener("DOMContentLoaded", () => {
             membersTableBody.innerHTML = '';
 
             // Loop through the fetched members and create table rows
-            data.forEach(member => {
+            data.forEach((member, index) => {
                 const row = document.createElement('tr');
                 
                 row.innerHTML = `
+                    <td>${index + 1}</td> <!-- Serial number -->
                     <td>${member.name}</td>
                     <td>${member.national_number}</td>
                     <td>${member.phone_number}</td>
-                    <td>${member.loan_amount}</td>
+                    <td>${Math.floor(member.loan_amount)}</td> <!-- Ensure loan_amount is a whole number -->
                     <td>${member.loan_duration}</td>
                     <td>${member.guarantee_item}</td>
-                    <td>${member.loan_issue_date}</td>
-                    <td>${member.paid_status}</td>
+                    <td>${new Date(member.loan_issue_date).toLocaleDateString()}</td> <!-- Format the date -->
+                    <td class="paid-status">${member.paid_status}</td> <!-- Added class to paid status -->
                     <td class="action-buttons">
                         <a href="/payment.html?id=${member.id}" class="view">View</a>
                         <a href="#" class="delete" data-id="${member.id}">Delete</a>
                     </td>
                 `;
+
+                // If the status is "Paid", color it red
+                if (member.paid_status === "Paid") {
+                    row.querySelector('.paid-status').style.color = "#f4462e"; // Set color to green
+                }
 
                 membersTableBody.appendChild(row);
             });
@@ -63,26 +71,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
-
 // Script to handle search functionality 
+function filterTable() {
+    const input = document.getElementById('searchInput');
+    const filter = input.value.toUpperCase();
+    const table = document.getElementById('membersTable');
+    const tr = table.getElementsByTagName('tr');
 
-    function filterTable() {
-        const input = document.getElementById('searchInput');
-        const filter = input.value.toUpperCase();
-        const table = document.getElementById('membersTable');
-        const tr = table.getElementsByTagName('tr');
-
-        for (let i = 1; i < tr.length; i++) {  // Start from 1 to skip table header
-            const td = tr[i].getElementsByTagName('td')[1]; // Index 1 is the 'National Number' column
-            if (td) {
-                const txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = '';
-                } else {
-                    tr[i].style.display = 'none';
-                }
+    for (let i = 1; i < tr.length; i++) {  // Start from 1 to skip table header
+        const td = tr[i].getElementsByTagName('td')[2]; // Index 2 is the 'National Number' column
+        if (td) {
+            const txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = '';
+            } else {
+                tr[i].style.display = 'none';
             }
         }
-    };
+    }
+}
 

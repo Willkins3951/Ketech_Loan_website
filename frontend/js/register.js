@@ -60,3 +60,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+
+// LOGIN ALERT BOX
+// Get the links that open the alert dialog
+const links = document.querySelectorAll(".nav-link");
+
+// When the user clicks on a link, show the alert dialog
+links.forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        alert("Sign In or Log In is Required First."); // Show alert dialog
+
+    });
+});

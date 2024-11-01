@@ -27,7 +27,7 @@
 
 /*  view members */
 body{
-    background-image: url('../images/bac2.jpg'); /* Path to your image */
+    background-image: url('../images/bac7.webp'); /* Path to your image */
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents repeating the background */
@@ -36,11 +36,13 @@ body{
 
 }
 
-
+a{
+    color:var(--color-danger);
+}
 /* SEARCH BUTTON  */
 
 .search-container{
-    width:70%;
+    width:50%;
     margin: 0.5rem auto;
     letter-spacing: 2px;
 }
@@ -54,8 +56,8 @@ body{
 }
 
 
-.list-container {
-    width: 85%;
+.payment-container {
+    width: 80%;
     margin: 10px auto;
     color:var(--color-white) ;
     background-color:var(--color-bg1) ;
@@ -93,27 +95,4 @@ tr:nth-child(even) {
     color: #f2f2f2;
     background-color: var(--color-bg);
 
-}
-
-.action-buttons a {
-    color: #333;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.action-buttons a.delete {
-    color: var(--color-danger1);
-}
-
-.action-buttons a.delete :hover{
-    text-decoration: underline;
-    color: var(--color-danger);
-}
-
-.action-buttons a.view {
-    color: var(--color-btn1);
-}
-
-.action-buttons a.view:hover {
-    color: var(--color-white);
 }
