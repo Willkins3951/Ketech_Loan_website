@@ -44,3 +44,64 @@ footer{
     left:0;
      
 }
+
+
+
+
+/* RESPONSIVENESS IN SMALL SCREENS  */
+
+    /* MEDIA :1024 PX  */
+
+
+    @media (max-width:1024px) {
+
+    .navbar {
+        background-color:blue;
+    
+    }  
+
+
+
+
+
+
+
+
+
+}
+
+
+
+        /* MEDIA :768 PX  */
+
+@media (max-width:768px) {
+    
+    .navbar {
+        background-color:red;
+    
+    }    
+
+
+
+
+
+
+    
+}
+
+
+     /* MEDIA :480 PX  */
+
+
+@media (max-width:480px) {
+    
+    .navbar {
+        background-color:green;
+        
+    }  
+
+    
+
+
+
+}

@@ -18,7 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td>${Math.floor(payment.loan_amount)}</td> <!-- Ensure loan_amount is a whole number -->
                     <td>${Math.floor(payment.interest)}</td> <!-- Interest column -->
                     <td>${Math.floor(payment.total_amount)}</td> <!-- Total Amount column -->
-                    <td>${new Date(payment.repayment_date).toLocaleDateString()}</td> <!-- Format the date -->
+                    
+                    <td>${new Date(payment.repayment_date).toLocaleDateString('en-GB')}</td> <!-- Format the date -->
+
                     <td class="action-buttons">
                         <a href="#" class="delete" data-id="${payment.id}">Delete</a>
                     </td>
@@ -79,3 +81,7 @@ function filterTable() {
         }
     }
 }
+
+
+
+

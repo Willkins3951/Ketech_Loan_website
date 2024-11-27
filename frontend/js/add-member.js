@@ -1,3 +1,7 @@
+
+//   MAIN JS FILE
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector('form');
 
@@ -9,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const phone_number = document.querySelector('input[name="phone_number"]').value; // New phone number field
         const loan_amount = document.querySelector('input[name="loan_amount"]').value;
         const loan_duration = document.querySelector('input[name="loan_duration"]').value; // New loan duration field
-        const guarantee_item = document.querySelector('input[name="guarantee_item"]').value; // Moved guarantee item
+        const guarantee_item = document.querySelector('input[name="guarantee_item"]').value; // Moved guarantee item        
         const loan_issue_date = document.querySelector('input[name="loan_issue_date"]').value;
         const paid_status = document.querySelector('select[name="paid_status"]').value;
 
@@ -53,3 +57,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+

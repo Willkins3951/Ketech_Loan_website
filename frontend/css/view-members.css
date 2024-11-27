@@ -36,29 +36,70 @@ body{
 
 }
 
+/* Navbar Styling */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5); /* Initial background color */
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 20px;
+    color: var(--color-white);
+    letter-spacing: 1.5px;
+    z-index: 500;
+   
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.logo i {
+    font-size: 1.6rem;
+    
+}
+
+.signup-right a {
+    padding: 10px;
+}
+
+
+
 
 /* SEARCH BUTTON  */
 
-.search-container{
+.search-container{ 
+    position: fixed;
+    top:0.25rem;
+    left:0;
+    right: 0;
     width:70%;
-    margin: 0.5rem auto;
+    margin:5rem auto 0.7rem auto;
     letter-spacing: 2px;
-    position: relative;
-    margin-top: 5rem;
 }
+
 
 
 .search-container input{ 
     height:2.2rem;
     font-size: 1.2rem;
-    background-color: var(--color-bg);
-    
+    background-color: var(--color-light);
+    border:3.5px solid var(--color-btn1) ;
+   
 }
 
+::placeholder{
+    color: var(--color-success);
+
+}
 
 .list-container {
-    width: 85%;
-    margin: 10px auto;
+    width: 90%;
+    margin: 150px auto 10rem auto;
     color:var(--color-white) ;
     background-color:var(--color-bg1) ;
     padding: 10px;
@@ -120,3 +161,93 @@ tr:nth-child(even) {
     color: var(--color-white);
 }
 
+
+
+
+
+
+
+/* RESPONSIVENESS IN SMALL SCREENS  */
+
+    /* MEDIA :1024 PX  */
+
+
+    @media (max-width:1024px) {
+
+        .navbar {
+            background-color:blue;
+        
+        }  
+
+        .logo {
+            font-size: 18px;
+
+        }
+        
+        .logo i {
+            font-size: 1.4rem;
+            
+        }
+
+        .nav-links li {
+            margin-left: 40px;
+        }
+
+        .add-member{
+            display:none;
+            
+        }
+
+        .list-container {
+            width: 98%;
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+            /* MEDIA :768 PX  */
+    
+    @media (max-width:790px) {
+        
+        .navbar {
+            background-color:red;
+        
+        }   
+
+        .nav-links li {
+            margin-left:0;
+        }
+    
+    
+    
+    
+    
+    
+        
+    }
+    
+    
+         /* MEDIA :480 PX  */
+    
+    
+    @media (max-width:480px) {
+        
+        .navbar {
+            background-color:green;
+            
+        }  
+    
+        
+    
+    
+    
+    }

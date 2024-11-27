@@ -11,17 +11,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Display member details
     const memberDetailsDiv = document.getElementById('memberDetails');
 
+   
     // Format the loan issue date using toLocaleDateString
     const loanIssueDate = new Date(member.loan_issue_date);
-    const formattedLoanIssueDate = loanIssueDate.toLocaleDateString('en-CA'); // Formats as YYYY-MM-DD
+    const formattedLoanIssueDate = loanIssueDate.toLocaleDateString('en-GB'); // Formats as DD/MM/YYYY
 
+        
     memberDetailsDiv.innerHTML = `
-        <p>Name: ${member.name}</p>
-        <p>National Number: ${member.national_number}</p>
-        <p>Loan Amount: ${member.loan_amount}</p>
-        <p>Loan Issue Date: ${formattedLoanIssueDate}</p>
-        <p>Guarantee Item: ${member.guarantee_item}</p>
+        <p><span class="label">Name:</span> ${member.name}</p>
+        <p><span class="label">National Number:</span> ${member.national_number}</p>
+        <p><span class="label">Loan Amount:</span> ${member.loan_amount}</p>
+        <p><span class="label">Loan Issue Date:</span> ${formattedLoanIssueDate}</p>
+        <p><span class="label">Guarantee Item:</span> ${member.guarantee_item}</p>
     `;
+
 
     // Handle the calculate button click
     const calculateBtn = document.getElementById('calculateBtn');
@@ -56,9 +59,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             const calculationResultsDiv = document.getElementById('calculationResults');
             calculationResultsDiv.innerHTML = `
-                <p>Duration (Weeks): ${weeksPassed}</p>
-                <p>Interest: ${interest.toFixed(0)}</p>
-                <p>Total Amount to Repay: ${totalRepayment.toFixed(0)}</p>
+                <p><span class="label">Duration (Weeks):</span> ${weeksPassed}</p>
+                <p><span class="label">Interest:</span> ${interest.toFixed(0)}</p>
+                <p><span class="label">Total Amount to Repay:</span> ${totalRepayment.toFixed(0)}</p>
                 <button id="confirmPaymentBtn">Confirm Payment</button>
             `;
 

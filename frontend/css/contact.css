@@ -51,6 +51,7 @@ body{
     padding:2rem 0 3rem 0;
     
 }
+
 .contact h1{
     text-decoration: center;
     color:var(--color-white);
@@ -88,13 +89,11 @@ body{
     position:relative; 
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    gap:1rem;
-
-    
+    gap:1rem;  
 }
 
 .ctr input{
-    color:var(--color-text);
+    color:var(--color-white);
     background-color: rgba(0, 0, 0, 0.2);
     padding:1rem 0.6rem;
     border:1.5px solid transparent;
@@ -146,7 +145,7 @@ textarea::placeholder{
     width:40%;
     margin:1rem auto;
     font-weight: 600;
-    color:var(--color-black);
+    color:var(--color-light);
     padding:1.2rem 1.4rem;
 }
 
@@ -155,24 +154,18 @@ textarea::placeholder{
 .contact-details{
     background-color: var(--color-bg) ;
     padding:1.5rem;
-    border-radius: 0.4rem;
     margin-top: 2rem;
   }
-
-
 
 
 
 .details-ctr{
     width:80%;
     margin:0 auto;
-
 }
 
-.details-ctr a{
-    
+.details-ctr a{   
     color:var(--color-white);
-
 }
 
 .details-ctr h2{
@@ -223,5 +216,101 @@ textarea::placeholder{
 
 
 
+
+
+
+/* RESPONSIVENESS IN SMALL SCREENS  */
+
+    /* MEDIA :1024 PX  */
+
+
+    @media (max-width:1024px) {
+
+        .navbar {
+            background-color:blue;
+        
+        }  
+
+        /*  ===== CONTACT SECTION ==== */
+
+
+        .form-ctr{
+            margin:.3rem 2.5rem;
+            
+        }
+
+        /* ======= GET IN TOUCH STYLING ==== */
+
+        .contact-details{
+            background-color: var(--color-bg) ;
+            padding:1.5rem 1.2rem;
+            border-radius: 0.4rem;
+            margin-top: 2rem;
+        }
+
+        .details-ctr{
+            width:90%;
+        
+        }
+ 
+    
+    }
+    
+    
+    
+            /* MEDIA :790PX  */
+    
+    @media (max-width:790px) {
+        
+        .navbar {
+            background-color:red;
+        
+        }  
+
+        .ctr{
+            position:relative; 
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        .send{   
+            width:60%;
+            margin:1rem auto;
+        }
+
+        .details-ctr{
+            width:90%;
+        }
+
+        .sub-details{
+            display: grid;  
+            grid-template-columns: repeat(1, 1fr);   
+            gap:2rem;
+        }
+    
+    
+    
+    
+    
+    
+        
+    }
+    
+    
+         /* MEDIA :480 PX  */
+    
+    
+    @media (max-width:480px) {
+        
+        .navbar {
+            background-color:greem;
+            
+        }  
+    
+        
+    
+    
+    
+    }
 
 

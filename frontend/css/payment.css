@@ -29,4 +29,81 @@
     border-radius: 5px;
     letter-spacing: 1.5px;
     margin-top:5rem;
+    background-color: var(--color-bg1);
 }
+
+h2{
+    color: var(--color-success);
+
+}
+
+.label {
+    color: var(--color-success);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIVENESS IN SMALL SCREENS  */
+
+    /* MEDIA :1024 PX  */
+
+
+    @media (max-width:1024px) {
+
+        .navbar {
+            background-color:blue;
+        
+        }  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+            /* MEDIA :768 PX  */
+    
+    @media (max-width:790px) {
+        
+        .navbar {
+            background-color:red;
+        
+        }  
+    
+    
+    
+    
+    
+    
+        
+    }
+    
+    
+         /* MEDIA :480 PX  */
+    
+    
+    @media (max-width:480px) {
+        
+        .navbar {
+            background-color:green;
+            
+        }  
+    
+        
+    
+    
+    
+    }

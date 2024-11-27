@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // LOGIN ALERT BOX
+
 // Get the links that open the alert dialog
 const links = document.querySelectorAll(".nav-link");
 

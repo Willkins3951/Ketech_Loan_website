@@ -36,6 +36,12 @@ body{
 
 }
 
+.signup-right a {
+    padding: 10px 8px;
+    
+}
+
+
 .add-member-ctr{
     position: relative;
     margin-top: 6rem;
@@ -86,3 +92,77 @@ footer{
     bottom:0;
     left:0;
 }
+
+
+
+
+
+/* RESPONSIVENESS IN SMALL SCREENS  */
+
+    /* MEDIA :1024 PX  */
+
+
+    @media (max-width:1024px) {
+
+        .navbar {
+            background-color:blue;
+        
+        }  
+
+        .logo {
+            font-size: 18px;
+            
+        }
+        
+        .logo i {
+            font-size: 1.5rem;
+            margin-right:2px;
+        }
+
+        .reg-btn{
+            display:none;
+        }
+    
+    
+    }
+    
+    
+    
+         /* MEDIA :768 PX  */
+    
+    @media (max-width:790px) {
+        
+        .navbar {
+            background-color:red;
+        
+        }  
+        .add-member-ctr{
+            position: relative;
+            margin-top: 6.1rem;
+            width: 400px;
+        }
+
+        .container {
+            padding: 10px 20px;
+
+        }
+    
+        
+    }
+    
+    
+         /* MEDIA :480 PX  */
+    
+    
+    @media (max-width:480px) {
+        
+        .navbar {
+            background-color:green;
+            
+        }  
+    
+        
+    
+    
+    
+    }

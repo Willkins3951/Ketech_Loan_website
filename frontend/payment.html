@@ -6,12 +6,14 @@
     <title>Payment</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/payment.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
 </head>
 <body>
 <nav class="navbar">
     <div class="logo">
         <i class="uil uil-dollar-alt"></i>
-        <a href="#">Ketech Investment.</a>    
+        <a href="home.html">Ketech Investment.</a>    
     </div>
 
     <ul class="nav-links">
@@ -24,9 +26,18 @@
         <a href="/add-member.html">Add a Member</a>
     </div>
 
-    <div class="signup-right">
-        <a href="/login.html">Log Out</a>
-    </div>
+
+    <div class="mode-menu">
+        <div class="menu-btn" id="open-menu">
+            <i class="uil uil-bars"></i>  
+        </div>
+
+        <div class="menu-btn" id="close-menu">
+            <i class="uil uil-multiply"></i>  
+        </div>
+
+    </div> 
+    
 </nav>
 
 <div class="payment-container">
@@ -35,7 +46,7 @@
 
     <label for="repaymentDate">Select Repayment Date:</label>
     <input type="date" id="repaymentDate">
-
+<br>
     <button id="calculateBtn">Calculate Repayment</button>
 
     <div id="calculationResults"></div>
@@ -61,5 +72,8 @@
 
 
 <script src="/js/payment.js"></script>
+
+<script src="/js/script.js"></script>
+
 </body>
 </html>
