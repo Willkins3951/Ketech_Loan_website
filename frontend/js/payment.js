@@ -45,7 +45,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             const timeDifference = repaymentDateObj - issueDate;
 
             // Calculate the number of full weeks (if any part of a week has passed, count as one full week)
-            const weeksPassed = Math.ceil(timeDifference / (1000 * 60 * 60 * 24 * 7));
+            // const weeksPassed = Math.ceil(timeDifference / (1000 * 60 * 60 * 24 * 7));
+            
+            const weeksPassed = Math.ceil((timeDifference - 1000 * 60 * 60 * 24) / (1000 * 60 * 60 * 24 * 7));
+
 
             // Calculate interest at 12% per week
             const interest = loanAmount * 0.12 * weeksPassed; // Calculate interest

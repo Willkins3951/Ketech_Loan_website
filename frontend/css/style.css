@@ -25,9 +25,6 @@ body {
 
 
 
-
-
-
 :root{
     --color-primary:#6c63ff;
     --color-success:#00bf8e;
@@ -58,6 +55,7 @@ body {
 ::placeholder{
     font-weight: bold;
 }
+
 
 input[type="text"], input[type="password"],
  input[type="number"], input[type="date"],
@@ -213,7 +211,7 @@ body{
 
 .container {
     background-color: var(--color-white);
-    padding: 10px 40px;
+    padding: 10px 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     width: 300px;

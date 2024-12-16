@@ -25,7 +25,7 @@
 }
 
 .uil{
-    color: var(--color-bg);
+    color: var(--color-success);
     font-size:xx-large;
     font-weight: 800;
 
@@ -44,29 +44,34 @@ body{
    
 
 .container_home{
-    height: 200px;
-    width:900px;
+    height: fit-content;
+    width:70%;
+    width:max-content;
     background-color: var(--color-bg);
     color: var(--color-white);
     box-shadow:inset 0px 0px 1px var(--color-white),
                     0px 0px 3px var(--color-white), 
                     0px 0px 5px var(--color-white);
-    margin-top: 8rem;                  
-
+    margin-top: 8rem;   
+    
 }
 
 
 /* Styling the divs holding the options */
 
 .div-options {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    display: grid;
+    grid-template-columns:repeat(3 ,1fr);
+    gap: 20px;
+    width:100%;
+    margin:2rem 0.2rem;
+    
+
 }
 
 
 .option {
-    width: fit-content;
+    width: 19rem;
     margin-top: 1.2rem;
       
 }

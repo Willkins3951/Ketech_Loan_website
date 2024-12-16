@@ -29,9 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 paymentsTableBody.appendChild(row);
             });
         })
+
         .catch(error => {
             console.error('Error fetching payments:', error);
         });
+
 
     // Add event listener for delete buttons
     paymentsTableBody.addEventListener('click', (event) => {
