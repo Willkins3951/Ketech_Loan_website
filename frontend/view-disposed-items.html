@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +27,7 @@
     </ul>
 
     <div class="signup-right">
+        <a href="/view-members.html">View Members</a>
         <a href="/view-buyers.html">View Buyers</a>
     </div>
 
@@ -40,19 +42,38 @@
 
     </div> 
     
-</nav>
+</nav> 
 
 
+<!-- Search bar -->
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search by National Number..." onkeyup="filterTable()">
+</div>
 
 
+<div class="list-container">
 
+    <table id="disposedItemsTable">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>National Number</th>
+                <th>Loan Amount</th>
+                <th>Loan Duration</th>
+                <th>Interest</th>
+                <th>Total Amount to Repay</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be populated dynamically -->
+        </tbody>
+    </table>
+</div>
 
-
-
- <!-- ====== FOOTER SECTION===== -->
-
-
- <footer>
+<footer>
     <div class="sub-container ftr">    
         <a href="#">
             Copyright<i class="uil uil-copyright"></i>2024 By Dev Willkins | All Rights Reserved.
@@ -68,10 +89,14 @@
 
 
 <script src="/js/Script.js "></script>
+<script src="/js/view-disposed-items.js"></script>
 
 
 </body>
 
-</html> 
+</html>  
+
+
+
 
 

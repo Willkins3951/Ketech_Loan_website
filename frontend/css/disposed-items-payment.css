@@ -1,0 +1,118 @@
+
+:root{
+    --color-primary:#6c63ff;
+    --color-success:#00bf8e;
+    --color-danger:#f75842;
+    --color-danger1:red;
+    --color-white:#fff;
+    --color-light:#ccc;
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+    --color-bg3 :#007bff;
+    --color-bg4:#0056b3;
+    --color-btn1:#007bff;
+    --color-btn2:#0056b3;
+   
+    --color-animation:cyan;
+    --container-width-lg:88%;
+    --container-width-md:90%;
+    --container-width-sm:92%;
+    --container-width-vsm:94%;
+    --transition: all 400ms ease;
+}
+
+body{
+    background-image: url('../images/bac7.webp'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-color: var(--color-white); 
+}
+
+*{
+    text-transform:capitalize;
+}
+
+
+.dispose-payment-container {
+    position: relative;
+    width: 50%;
+    background-color: var(--color-bg);
+    background-color:rgba(46, 50, 103, 0.65);
+    color: var(--color-white);
+    padding: 20px 40px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    top: 50px;
+    left:50%;
+    transform: translate(-50%, 10%);
+    box-shadow: inset 0px 0px 0px var(--color-white),
+                        0px 0px 3px var(--color-white),
+                        0px 0px 15px var(--color-white);
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+.dispose-form {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1.2rem;
+    
+    
+}
+
+.label{
+    color:var(--color-success) ;
+
+}
+
+.dispose-form input{
+    color:var(--color-white);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding:1rem 0.6rem;
+    margin:0.4rem 0;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    transition:0.3s ease;   
+    overflow: visible;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 90%;
+
+}
+
+.dispose-form input:focus{
+    outline:none;
+    border:1.5px solid var(--color-light);
+}
+
+.dispose-form::placeholder{
+    color:var(--color-light);
+    text-transform: capitalize;
+    position:relative;
+}
+
+.btn{
+    position:relative;
+    left:50%;
+    display: block;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.2rem;
+    margin:0;
+    letter-spacing:2px;
+    
+}
+
+footer {  
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left:0;
+}

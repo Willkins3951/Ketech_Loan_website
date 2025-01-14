@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Members</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/disposed-items-payment.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <i class="uil uil-dollar-alt"></i>
+        <a href="home.html">Ketech Investment.</a>    
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="signup-right add-member">
+        <a href="/view-members.html">view Member</a>
+    </div>
+
+    <div class="signup-right view-payments">
+        <a href="/view-buyers.html">View-Buyers</a>
+    </div>
+
+    <div class="mode-menu">
+        <div class="menu-btn" id="open-menu">
+            <i class="uil uil-bars"></i>  
+        </div>
+
+        <div class="menu-btn" id="close-menu">
+            <i class="uil uil-multiply"></i>  
+        </div>
+
+    </div> 
+
+</nav>
+
+    <div class="dispose-payment-container">
+        <h2>Disposed Item Payment</h2>
+        <div id="disposedItemDetails"></div>
+        
+        <form id="paymentForm" class="dispose-form">
+            
+                <input type="text" id="buyerName" placeholder="Buyer Name" required>
+                <input type="text" id="buyerPhone" placeholder="Buyer Phone No" required>
+                <input type="number" id="amountSold" placeholder="Amount Sold" required>
+                <input type="date" id="paymentDate"  placeholder="Date of Sale" required>
+           
+
+            <button type="submit" id="payButton" class="btn">Pay</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="sub-container ftr">    
+            <a href="#">Copyright<i class="uil uil-copyright"></i>2024 By Dev Willkins | All Rights Reserved.</a>
+        </div>
+    </footer>
+
+    <script src="/js/disposed-items-payment.js"></script>
+    <script src="/js/script.js"></script>
+
+</body>
+</html>

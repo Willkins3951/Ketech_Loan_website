@@ -87,6 +87,7 @@ input[type="text"], input[type="password"],
     color: var(--color-success);
 }
 
+
 footer{
     position:relative;
     bottom:0;

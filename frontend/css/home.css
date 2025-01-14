@@ -48,6 +48,7 @@ body{
     width:70%;
     width:max-content;
     background-color: var(--color-bg);
+    background-color:rgba(0, 0, 0, 0.6);
     color: var(--color-white);
     box-shadow:inset 0px 0px 1px var(--color-white),
                     0px 0px 3px var(--color-white), 

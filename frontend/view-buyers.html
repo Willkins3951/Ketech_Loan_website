@@ -42,8 +42,29 @@
     
 </nav>
 
+<!-- Search bar -->
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search by National Number..." onkeyup="filterTable()">
+</div>
 
-
+<div class="buyers-container">
+    <h2>Buyers List</h2>
+    <table id="buyersTable">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Buyer Name</th>
+                <th>Buyer Phone</th>
+                <th>Amount Sold</th>
+                <th>Item Purchased Id</th>
+                <th>Sale Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically populated here -->
+        </tbody>
+    </table>
+</div>
 
 
 
@@ -68,6 +89,7 @@
 
 
 <script src="/js/Script.js "></script>
+<script src="/js/view-buyers.js"></script>
 
 
 </body>

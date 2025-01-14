@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
 // Script to handle search functionality 
 function filterTable() {
     const input = document.getElementById('searchInput');

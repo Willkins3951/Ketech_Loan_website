@@ -138,8 +138,14 @@ tr:nth-child(even) {
 
 }
 
+tr:hover {
+    background-color: var(--color-bg2); 
+    transition: .2s ease-in-out;
+}
+
 .action-buttons a {
     color: #333;
+    color: white;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -148,19 +154,28 @@ tr:nth-child(even) {
     color: var(--color-danger1);
 }
 
-.action-buttons a.delete :hover{
+.action-buttons a.delete:hover{
     text-decoration: underline;
-    color: var(--color-danger);
-}
-
-.action-buttons a.view {
-    color: var(--color-btn1);
-}
-
-.action-buttons a.view:hover {
     color: var(--color-white);
 }
 
+.action-buttons a.view {
+    color: var(--color-white);
+    background-color: var(--color-success);
+    padding: 5px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size:1.1rem;
+    color: white;
+    letter-spacing:2px;
+
+}
+
+.action-buttons a.view:hover {
+    color: var(--color-btn1);
+    background-color: var(--color-white);
+}
 
 
 

@@ -25,11 +25,19 @@
     --transition: all 400ms ease;
 }
 
+*{
+    text-transform:capitalize;
+}
+
 .payment-container{
     border-radius: 5px;
     letter-spacing: 1.5px;
     margin-top:5rem;
     background-color: var(--color-bg1);
+    background-color:rgba(0, 0, 0,0.7);
+    box-shadow: inset 0px 0px 0px var(--color-white),
+                        0px 0px 3px var(--color-white),
+                        0px 0px 5px var(--color-white);
 }
 
 h2{
@@ -42,6 +50,20 @@ h2{
     font-weight: bold;
 }
 
+
+/* Style for Dispose Button */
+#disposeButton {
+    background-color: #e67e22; /* Disposed Button Color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#disposeButton:hover {
+    background-color: #d35400;
+}
 
 
 

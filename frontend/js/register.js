@@ -75,4 +75,5 @@ links.forEach(link => {
         alert("Sign In or Log In is Required First."); // Show alert dialog
 
     });
+    
 });

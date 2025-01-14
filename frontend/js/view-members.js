@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td>${new Date(member.loan_issue_date).toLocaleDateString('en-GB')}</td> <!-- Format the date to dd/mm/yyyy -->
                     <td class="paid-status">${member.paid_status}</td> <!-- Added class to paid status -->
                     <td class="action-buttons">
-                        <a href="/payment.html?id=${member.id}" class="view">View</a>
+                        <a href="/payment.html?id=${member.id}" class="view">Pay</a>
                         <a href="#" class="delete" data-id="${member.id}">Delete</a>
                     </td>
                 `;
@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 // If the status is "Paid", color it red
                 if (member.paid_status === "Paid") {
                     row.querySelector('.paid-status').style.color = "#f4462e"; // Set color to green
+                } else if (member.paid_status === "Disposed") {
+                    row.querySelector('.paid-status').style.color = "#f82408"; // Set color to green
                 }
 
                 membersTableBody.appendChild(row);
@@ -71,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
 
 // Script to handle search functionality 
 

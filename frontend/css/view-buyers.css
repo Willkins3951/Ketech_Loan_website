@@ -30,6 +30,58 @@ body{
     background-image: url('../images/bac7.webp'); 
 }
 
+/* SEARCH BUTTON  */
+
+.search-container{ 
+    position: fixed;
+    top:0.25rem;
+    left:0;
+    right: 0;
+    width:70%;
+    margin:5rem auto 0.7rem auto;
+    letter-spacing: 2px;
+}
+
+
+
+.search-container input{ 
+    height:2.2rem;
+    font-size: 1.2rem;
+    background-color: var(--color-light);
+    border:3.5px solid var(--color-btn1) ;
+   
+}
+
+.buyers-container {
+    padding: 20px;
+    background-color: white;
+    margin: 10rem auto 1rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width:80%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f1f1f1;
+    color: #333;
+}
 
 footer{
     position:absolute;
