@@ -1,5 +1,4 @@
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const disposedItemsTableBody = document.querySelector('#disposedItemsTable tbody');
 
@@ -12,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
             data.forEach((item, index) => {
                 const row = document.createElement('tr');
                 
+                // Add class for sold status, which will be red
+                const statusClass = item.status === 'Sold' ? 'sold' : '';
+                
                 row.innerHTML = `
                     <td>${index + 1}</td>
                     <td>${item.name}</td>
@@ -20,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td>${item.loan_duration}</td>
                     <td>${item.interest}</td>
                     <td>${item.total_amount_repayable}</td>
-                    <td>${item.status}</td>
+                    <td><span class="status ${statusClass}">${item.status}</span></td>
                     <td class="btns">
                         <button class="pay" data-id="${item.id}">Pay</button>
                         <button class="delete" data-id="${item.id}">Delete</button>
@@ -34,7 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll('.pay').forEach(button => {
                 button.addEventListener('click', (event) => {
                     const itemId = event.target.getAttribute('data-id');
-                    window.location.href = `/disposed-items-payment.html?id=${itemId}`;
+                    const itemStatus = event.target.closest('tr').querySelector('.status').innerText;
+
+                    // If the item is sold, show alert and prevent navigation
+                    if (itemStatus === 'Sold') {
+                        alert('This item is already sold. You cannot confirm payment.');
+                    } else {
+                        window.location.href = `/disposed-items-payment.html?id=${itemId}`;
+                    }
                 });
             });
 
